@@ -33,13 +33,17 @@
 
         console.log("sortArrayDescending([3, 1, 4, 2]):", sortArrayDescending([3, 1, 4, 2]));
 
-        // Function 6: lowercaseFirstLetter
-        function lowercaseFirstLetter(str) {
-            if (!str) return "";
-            return str.charAt(0).toLowerCase() + str.slice(1);
-        }
-
-        console.log("lowercaseFirstLetter('Hello'):", lowercaseFirstLetter("Hello"));
+        // Function 6: lowercaseFirstLetter(HELLO)
+          function lowercaseFirstLetter(str) {
+            if (str.length === 0) {
+              return str;
+            }
+          return str[0].toLowerCase() + str.slice(1);
+          }
+          
+          const string1 = "HELLO";
+          
+          console.log("lowercaseFirstLetter('HELLO'):", lowercaseFirstLetter(string1));
 
         // Function 7: findAverage
         function findAverage(numbers) {
